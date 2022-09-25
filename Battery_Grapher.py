@@ -27,7 +27,7 @@ plt.gca().xaxis.set_major_locator(mdates.DayLocator())
 
 plt.plot(x, y1)
 plt.gcf().autofmt_xdate()
-plt.yticks(np.arange(0, 100, 5))
+plt.yticks(np.arange(0, 105, 5))
 plt.xticks(np.arange(min(x), max(x)+datetime.timedelta(0.01), (max(x) - min(x)) / 20))
 plt.title("Battery Percentage Over Time")
 plt.xlabel("Time (date)")
